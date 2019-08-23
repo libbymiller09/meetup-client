@@ -1,5 +1,12 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: G8dQSy5dBFBWBeSbGC17eS1CSGPUAhAYblvkfe1Dm5z8RfBid2Gdzzrionq9uWpX872s6SLmkj8ickVQ3RJrhIoL+2EtIar2qFwyBiHCjF+c5ukq3r3Y5BN/vcE+a8TvncL7GaoeVvs6yxj7GpViWx1mBGrkBBXa8kVKRq00t9q9VAlRlZ1+wtu0kVufdgiYnrVPWEzw0g4l58wYrUNVxISBaFzO+S6DeWhev32BVYT42aEFU76DXOI4/d8UBUmbmVOTM6NBHzcsFvXfvwteCPUC2TElBjstE6rWYCLp+eoB8FG25dvnm2y8DbPAJAFIi2JfN89eBR8Kp7ByxF0f3in4rjjxpN6HwbrWWOieea8jckswsaGq4P+Aq64vWhfXwILz74VF279XT2AmY8nbpfuHZwxZSzHgWOe93McHOU9e+odQY7vizk6W6+6HdQTjP82ynX6LgpMdcxuyp6EOg8rn98Ldsd6/yfnc5noclN21jp2cZcv+wiu5oWST16gWGfkOSPua3IYc7rhQwql7V3zaA7xfk/2wjIj4i5QIY9/UCCMHpLuga+4h2VYEaQJxz33F3rXin8oEvYciJuAZOHIZZBXN8wEa8WjVizeQ8x5Y8s7sQHjsunNSURRnoez9krS39REUex0WOu2wKgnDfkIda677I/BGPdgSYzRNKMY=
+  app: young-beyond-45168
+  on:
+    repo: libbymiller09/meetup-client
