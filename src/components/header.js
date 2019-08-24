@@ -6,8 +6,8 @@ class Header extends React.Component {
       <nav className="header">
         <img src="" alt="Logo" className="header__logo" />
         <ul className="header__list">
-          <li className="header__item"><a href="#">Home</a></li>
-          <li className="header__item"><a href="#">Map</a></li>
+          <li className="header__item"><a href="/">Home</a></li>
+          <li className="header__item"><a href="/map">Map</a></li>
         </ul>
       </nav>
     );
