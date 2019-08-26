@@ -1,16 +1,16 @@
 import React from 'react';
-import ModalForm from './modal-form';
-import ModalStatic from './modal-static';
 
-class Modal extends React.Component {
-  render() {
-    return (
-      <div className="modal">
-        <ModalForm />
-        <ModalStatic />
-      </div>
-    );
-  }
-}
+const Modal = ({ handleClose, show, children }) => {
+  const showHideClassName = show ? "modal display-block" : "modal display-none";
+
+  return (
+    <div className={showHideClassName}>
+      <section className="modal-main">
+        {children}
+        <button onClick={handleClose}> modal button</button>
+      </section>
+    </div>
+  );
+};
 
 export default Modal;
