@@ -11,7 +11,6 @@ export default function App(props) {
     <Router>
       <div className="app">
         <Header />
-        <h1><Link to="/">Meetups</Link></h1>
         <main>
           <Route exact path="/" component={Home} />
           <Route exact path="/map" component={MapContainer} />

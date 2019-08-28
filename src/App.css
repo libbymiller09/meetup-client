@@ -4,6 +4,49 @@
   padding: 0;
 }
 
+/*******************************/
+/* Header styles */
+
+nav {
+  background-color: crimson;
+}
+
+.nav ul {
+  /* background-color: crimson; */
+  width: 100%;
+}
+
+.nav-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 5px;
+  float: left;
+}
+
+.nav li {
+  float: right;
+  background-color: palevioletred;
+  text-align: right;
+  height: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px;
+  background-color: crimson; 
+}
+
+/********************************/
+/* Home page styles */
+
+.home-page {
+  line-height: 3;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 /********************************/
 /* Modal Styles */
 .modal {

@@ -1,14 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../img/logo.jpg';
 
 class Header extends React.Component {
   render() {
     return (
-      <nav className="header">
-        <img src="" alt="Logo" className="header__logo" />
-        <ul className="header__list">
-          <li className="header__item"><a href="/">Home</a></li>
-          <li className="header__item"><a href="/map">Map</a></li>
-        </ul>
+      <nav className="nav">
+        <div className="logo">
+          <Link to="/"><img src={logo} alt="Logo" className="nav-logo" /></Link>
+        </div>
+        <div className="list">
+          <ul className="nav-list">
+            <li className="nav-item"><a href="/" className="nav-link">Home</a></li>
+            <li className="nav-item"><a href="/map" className="nav-link">Map</a></li>
+          </ul>
+        </div>
       </nav>
     );
   }
